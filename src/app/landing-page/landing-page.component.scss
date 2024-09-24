@@ -1,0 +1,72 @@
+:host {
+    display: block;
+    background-color: #46341a;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+:host::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+body {
+    display: block;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-image: url('/assets/background1.jpg'), repeating-linear-gradient(0deg, transparent, transparent 98%, #46341a 98%, #46341a 100%);
+    background-repeat: no-repeat, repeat;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.corner {
+    position: absolute;
+    color: #ffffff;
+    font-size: 90px;
+    padding: 10px;
+    font-family: 'Workbench', sans-serif;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+    display: none;
+}
+
+.enter-btn {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 3px dotted #81d504;
+    font-size: 20px;
+    font-family: 'Workbench';
+    color: #ff258b;
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+    box-sizing: border-box;
+    background: linear-gradient(#ffffff, #175a45) no-repeat;
+    background-size: 100% 1px;
+    animation: dash 3s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        background-position: 100% center;
+    }
+}

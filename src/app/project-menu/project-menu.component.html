@@ -1,0 +1,40 @@
+<div class="container-fluid h-100" appClickOutside (clickOutside)="unselectProject()">
+    <div class="row h-100">
+
+        <div class="col-3 d-flex align-items-center">
+
+            <ul class="list-group">
+                <li class="list-group-item text-uppercase cursor-pointer"
+                    *ngFor="let project of projects; let i = index"
+                    (click)="selectProject(project, i); $event.stopPropagation()"
+                    [class.selected]="selectedProjectIndex === i">
+                    {{ project.name }}
+                </li>
+                <li (click)="selectAboutAndNavigate()" class="list-group-item text-uppercase cursor-pointer about-item"
+                    [class.about-selected]="selectedAbout">
+                    About
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-2 h-100">
+            <div class="d-flex flex-column justify-content-center">
+                <h3 class="project-title ">{{ selectedProject?.name }}</h3>
+                <h3 class="project-season">{{ selectedProject?.year }}</h3>
+                <h3 class="project-detail h-100">{{ selectedProject?.detail }}</h3>
+            </div>
+        </div>
+
+        <div class="col-7 image-container" [class.darkened]="selectedProject">
+            <div *ngIf="selectedProject" class="circle text-muted cursor-pointer" (click)="launchProduct()">
+                <span class="arrow">-></span>
+            </div>
+            <img *ngIf="selectedProject" src="{{selectedProject?.image}}" class="img-fluid">
+        </div>
+
+
+
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,14 @@
+.follow-text {
+    position: absolute;
+    display: flex;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .letter {
+    font-size: 14px;
+    margin: 0 5px; 
+    transition: transform 0.1s ease-in-out;
+    font-family: 'Workbench', sans-serif;
+    color: #000000;
+  }
