@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "Vintage";
+  src: url("/assets/fonts/Vintage-Regular/VIntage.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vintage2";
+  src: url("/assets/fonts/Vintage-Outline/Vintage-Outline.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Vintage";
+}
+
+.header-custom {
+  position: relative;
+  color: white;
+  height: 100vh;
+  background-image: url("/assets/prince2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-custom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.container {
+  z-index: 2;
+}
+
+.title1,
+.title2 {
+  margin: 0 !important;
+  font-family: "Vintage";
+  padding: 0;
+  font-size: 160px;
+  color: #3bc19a;
+}
+
+.title2 {
+  font-size: 60px;
+  letter-spacing: 100px;
+  color: #A8C43E;
+}
+
+.copy1 p {
+  font-size: 20px;
+  color: #5A3EC4;
+}
+
+@media (min-width: 768px) {
+  .header-custom .container {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+}
+.circle-nav,
+.circle-nav-right {
+  position: fixed;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1050;
+}
+
+.circle-nav {
+  left: 20px;
+}
+
+.circle-nav-right {
+  right: 20px;
+}
+
+.nav-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #5A3EC4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 10px;
+  color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-circle:last-child,
+.nav-circle-right:last-child {
+  margin-bottom: 0;
+}
+
+.nav-circle[href="/"]:hover {
+  background-color: #3bc19a;
+  color: white;
+}
+
+.nav-circle-right {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #5A3EC4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 10px;
+  color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-circle-right[href="/"]:hover {
+  background-color: #3bc19a;
+  color: white;
+}
+
+.full-viewport-background {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/newabout.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.full-viewport-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.full-viewport-background .container {
+  position: relative;
+  z-index: 2;
+}
+
+.second-background {
+  background-image: url("/assets/da1.jpg");
+}
+
+.third-background {
+  background-image: url("/assets/prince.jpg");
+}
+
+.border-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 3px solid #A8C43E;
+  width: 300px;
+  height: 250px;
+  margin: auto;
+  z-index: 1;
+}
+
+.full-viewport-background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-content h2 {
+  font-size: 150px;
+  font-weight: normal;
+  margin-top: 600px;
+  color: #43AFE6;
+  width: 100%;
+  height: auto;
+  font-family: "Vintage2";
+  z-index: 1;
+}
+
+.custom-navbar {
+  border: 2px solid #A8C43E;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  padding: 0 55px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #9f7fc7;
+}
+
+#new-section.full-viewport-background::before {
+  background: rgba(0, 0, 0, 0.9);
+}/*# sourceMappingURL=grid.component.css.map */

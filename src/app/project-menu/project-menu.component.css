@@ -1,0 +1,103 @@
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  font-family: "Workbench", sans-serif;
+  color: #000000;
+  margin-left: 10px;
+  font-size: 12px;
+  letter-spacing: -3px;
+  cursor: pointer;
+}
+
+.about-item {
+  border-top: 1px dotted black;
+  max-width: 80px;
+}
+
+.list-group-item.selected {
+  background-color: transparent;
+  color: #3F00FF;
+  letter-spacing: 14px;
+}
+
+.list-group-item.about-selected {
+  background-color: transparent;
+  color: #ca0c61;
+  letter-spacing: 12px;
+}
+
+.project-title {
+  font-family: "Workbench", sans-serif;
+  color: #3F00FF;
+  font-size: 24px;
+  margin-top: 20px;
+  letter-spacing: -5px;
+  text-align: right;
+}
+
+.project-season {
+  font-family: "Workbench", sans-serif;
+  font-size: 12px;
+  text-align: right;
+}
+
+.project-detail {
+  font-family: "Workbench", sans-serif;
+  font-size: 12px;
+  margin-top: 440px;
+  text-align: right;
+}
+
+.image-container {
+  position: relative;
+  height: 100%;
+  border: 2px dotted black;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.image-container.darkened::after {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.circle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 95px;
+  height: 95px;
+  border: 2px dotted #3F00FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.arrow {
+  font-size: 33px;
+  color: #3F00FF;
+  font-family: "Workbench", sans-serif;
+}/*# sourceMappingURL=project-menu.component.css.map */
