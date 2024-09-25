@@ -50,7 +50,7 @@
 
 .image-container {
     position: relative;
-    height: 100%; 
+    height: 100%;
     border: 2px dotted black;
     overflow: hidden;
 
@@ -73,19 +73,19 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0);
-    z-index: 2; 
+    z-index: 2;
     transition: background-color 0.3s ease;
 }
 
 .image-container.darkened::after {
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
 }
 
 
 .circle {
     position: absolute;
-    top: 10px; 
-    right: 10px;  
+    top: 10px;
+    right: 10px;
     width: 95px;
     height: 95px;
     border: 2px dotted #3F00FF;
@@ -94,7 +94,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 3; 
+    z-index: 3;
 }
 
 .arrow {
@@ -103,3 +103,70 @@
     font-family: 'Workbench', sans-serif;
 }
 
+.list-group-item {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .list-group-item {
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-left: -10px
+    }
+
+    .list-group {
+        margin-top: 222px;
+    }
+
+    .list-group-item.selected {
+        background-color: transparent;
+        color: #3F00FF;
+        letter-spacing: 2px;
+    }
+    .project-title {
+        font-family: 'Workbench', sans-serif;
+        color: #3F00FF;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: -70px;
+        letter-spacing: 1px;
+        text-align: right;
+    }
+    .project-season {
+        font-family: 'Workbench', sans-serif;
+        font-size: 12px;
+        text-align: right;
+    }
+    
+    .project-detail {
+        font-family: 'Workbench', sans-serif;
+        font-size: 12px;
+        margin-top: 650px;
+        text-align: right;
+    }
+
+.circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 55px;
+    height: 55px;
+    border: 3px dotted #3F00FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.arrow {
+    font-size: 22px;
+    margin-top: 5px;
+    color: #3F00FF;
+    font-family: 'Workbench', sans-serif;
+}
+
+
+
+}
