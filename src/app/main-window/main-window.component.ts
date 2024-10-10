@@ -35,7 +35,7 @@ export class MainWindowComponent implements OnInit {
       { id: 'daag', name: 'Concrete', year: '[spring 2019]', detail: '[furniture]', image: 'assets/lavender.jpg', additionalImage: 'assets/daag2.jpg', description: 'Suspended concrete plinths poured into steel structure for Toronto design gallery'},
       { id: 'floating-foam', name: 'Side Tables', year: '[spring 2019]', detail: '[furniture]', image: 'assets/daag1.jpg', additionalImage: 'assets/floatform2.jpg', description: 'Side tables in dyed american white ash' },
       { id: 'american-ash', name: '324234', year: '[spring 2020]', detail: '[furniture]', image: 'assets/daag2.jpg', additionalImage: 'assets/amash.jpg', description: 'Side tables in dyed american white ash' },
-      { id: 'sovereign-state', name: 'LP Stand', year: '[summer 2020]', detail: '[furniture]', image: 'assets/daag3.jpg', additionalImage: 'assets/sample3.jpg', description: 'Steel and american ash LP display' },
+      { id: 'sovereign-state', name: 'LP Stand', year: '[summer 2020]', detail: '[furniture]', image: 'assets/daag3.jpg', additionalImage: 'assets/sample3.jpg', description: 'Steel and american ash LP display for Ace Hotel Toronto' },
       { id: 'data-armada', name: 'Concrete ', year: '[winter 2018]', detail: '[retail]', image: 'assets/da1.jpg', additionalImage: 'assets/da2.jpg', description: 'Retail merchandising project in poured concrete and hand forged steel flat bar' },
 
     ];
