@@ -9,6 +9,11 @@
     cursor: pointer;
 }
 
+.list-group {
+    margin-top: -110px;
+    cursor: pointer;
+}
+
 .about-item {
     border-top: 1px dotted black;
     max-width: 80px;
@@ -109,13 +114,14 @@
 
 @media (max-width: 768px) {
     .list-group-item {
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 2px;
-        margin-left: -10px
+        margin-left: -10px;
+        cursor: pointer;
     }
 
     .list-group {
-        margin-top: 222px;
+        margin-top: 120px;
     }
 
     .list-group-item.selected {
@@ -133,15 +139,14 @@
         text-align: right;
     }
     .project-season {
-        font-family: 'Workbench', sans-serif;
-        font-size: 12px;
-        text-align: right;
+        display: none;
     }
     
     .project-detail {
         font-family: 'Workbench', sans-serif;
         font-size: 12px;
         margin-top: 650px;
+        margin-right: 10px;
         text-align: right;
     }
 

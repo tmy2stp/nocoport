@@ -1,7 +1,7 @@
-<div class="container-fluid h-100">
-    <div class="row h-100">
+<div class="container-fluid">
+    <div class="row">
         <div class="col-lg-7" style="padding-left: 50px;">
-
+            <!-- Main Image -->
             <div class="image-container">
                 <img [src]="project?.additionalImage" class="img-fluid" alt="Additional Image">
             </div>
@@ -9,9 +9,25 @@
 
         <div class="col-lg-5 mt-5">
             <div class="d-flex flex-column justify-content-center">
-                <h3 class="project-title">{{project?.name}}</h3>
-                <h3 (click)="navHome()" class="project-season h-100 cursor-pointer"> [home] </h3>
-                <p class="project-blurb h-100">{{project?.description}}</p>
+                <h3 class="project-title">{{ project?.name }}</h3>
+                <h3 (click)="navHome()" class="project-season cursor-pointer">[home]</h3>
+                <p class="project-blurb">{{ project?.description }}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Images Section -->
+    <div class="row additional-images mt-5">
+        <div class="col-12  d-flex justify-content-end align-items-center">
+
+
+            <div class="more-images-container">
+                <img [src]="project?.image" class="img-fluid mb-4" alt="Additional Image 1">
+                <img [src]="project?.additionalImage" class="img-fluid mb-4" alt="Additional Image 2">
+                <!-- Add more images as necessary -->
+
+
+
             </div>
         </div>
     </div>

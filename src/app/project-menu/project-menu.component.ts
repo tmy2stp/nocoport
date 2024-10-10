@@ -20,7 +20,7 @@ export class ProjectMenuComponent {
     { id: 'yxu', name: 'YxU', year:'[winter 2016]', detail: '[aluminum]', image: '/assets/main1.jpg' },
     { id: 'steamwhistle',name: 'Steamwhistle', year:'[spring 2018]', detail: '[black walnut]', image: 'assets/steamcarrier.jpg' },
     { id: 'daag', name: 'Daag', year:'[spring 2017]', detail: '[concrete]', image: 'assets/lavender.jpg' },
-    { id: 'floating-foam',name: 'Floating Foam', year:'[spring 2019]', detail: '[ink / ash]', image: 'assets/daag1.jpg' },
+    { id: 'floating-foam',name: 'Furniture', year:'[spring 2019]', detail: '[ink / ash]', image: 'assets/daag1.jpg' },
     { id: 'american-ash', name: 'American Ash', year:'[spring 2019]', detail: '[ash]', image: 'assets/daag2.jpg' },
     { id: 'sovereign-state',name: 'Sovereign State',year:'[summer 2019]', detail: '[ash]', image: 'assets/daag3.jpg' },
     { id: 'data-armada',name: 'Data Armada',year:'[winter 2015]', detail: '[concrete]', image: 'assets/da1.jpg' },

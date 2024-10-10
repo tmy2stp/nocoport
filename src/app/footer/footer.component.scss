@@ -47,7 +47,7 @@ footer {
         margin-left: -10px;
     }
     .nocoFoot {
-        font-size: 20px;
+        font-size:10px;
         font-family: 'Workbench', sans-serif;
         width: 100%;
         color: #5e5e5e;
@@ -56,5 +56,14 @@ footer {
         left: 0;
         background: transparent;
         padding: 10px 20px;
+
+    }
+
+    .footer-content{
+        float: right;
+        margin-right: -44px;
+        color: blue;
+        opacity: 0.2;
+
     }
 }
