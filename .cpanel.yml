@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOY_DIR=/home/emz3ru94ez4j/public_html
+    - /bin/cp -r dist/nocoport/* $DEPLOY_DIR/
