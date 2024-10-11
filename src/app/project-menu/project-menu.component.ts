@@ -13,7 +13,7 @@ export class ProjectMenuComponent {
   constructor(private router: Router) {}
 
    projects = [
-    { id: 'sorry-coffee', name: 'TESTING.', year:'[spring 2016]', detail: '[steel]', image:  'assets/sorry1.jpg'},
+    { id: 'sorry-coffee', name: 'TESTING!!.', year:'[spring 2016]', detail: '[steel]', image:  'assets/sorry1.jpg'},
     { id: 'kit-and-ace', name: 'Kit & Ace', year:'[spring 2014]', detail: '[copper]', image:  'assets/czolof2.jpg'},
     { id: 'louis-vuitton', name: 'Louis Vuitton', year:'[winter 2016]', detail: '[copper]', image: 'assets/detailLV.jpg' },
     { id: 'indigo', name: 'Indigo', year:'[summer 2018]', detail: '[brass]', image: 'assets/indigo.jpeg' },
