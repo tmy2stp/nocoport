@@ -13,16 +13,16 @@ export class ProjectMenuComponent {
   constructor(private router: Router) {}
 
    projects = [
-    { id: 'sorry-coffee', name: 'TESTING!!.', year:'[spring 2016]', detail: '[steel]', image:  'assets/sorry1.jpg'},
+    { id: 'sorry-coffee', name: 'Sorry Coffee Co..', year:'[spring 2016]', detail: '[steel]', image:  'assets/sorry1.jpg'},
     { id: 'kit-and-ace', name: 'Kit & Ace', year:'[spring 2014]', detail: '[copper]', image:  'assets/czolof2.jpg'},
     { id: 'louis-vuitton', name: 'Louis Vuitton', year:'[winter 2016]', detail: '[copper]', image: 'assets/detailLV.jpg' },
     { id: 'indigo', name: 'Indigo', year:'[summer 2018]', detail: '[brass]', image: 'assets/indigo.jpeg' },
     { id: 'yxu', name: 'YxU', year:'[winter 2016]', detail: '[aluminum]', image: '/assets/main1.jpg' },
     { id: 'steamwhistle',name: 'Steamwhistle', year:'[spring 2018]', detail: '[black walnut]', image: 'assets/steamcarrier.jpg' },
-    { id: 'daag', name: 'Daag', year:'[spring 2017]', detail: '[concrete]', image: 'assets/lavender.jpg' },
+    { id: 'daag', name: 'Concrete', year:'[spring 2017]', detail: '[concrete]', image: 'assets/lavender.jpg' },
     { id: 'floating-foam',name: 'Furniture', year:'[spring 2019]', detail: '[ink / ash]', image: 'assets/daag1.jpg' },
-    { id: 'american-ash', name: 'American Ash', year:'[spring 2019]', detail: '[ash]', image: 'assets/daag2.jpg' },
-    { id: 'sovereign-state',name: 'Sovereign State',year:'[summer 2019]', detail: '[ash]', image: 'assets/daag3.jpg' },
+    { id: 'american-ash', name: 'More Concrete', year:'[spring 2019]', detail: '[ash]', image: 'assets/daag2.jpg' },
+    { id: 'sovereign-state',name: 'Ace Hotel',year:'[summer 2019]', detail: '[ash]', image: 'assets/daag3.jpg' },
     { id: 'data-armada',name: 'Data Armada',year:'[winter 2015]', detail: '[concrete]', image: 'assets/da1.jpg' },
 
   ];
